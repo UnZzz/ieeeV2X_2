@@ -59,7 +59,8 @@ void MyVeinsRSUApp::initialize(int stage)
 
 MyVeinsRSUApp::~MyVeinsRSUApp()
 {
-    findHost()->unsubscribe(MyMac1609_4::sigCarPktSent, this);
+    if (getSimulation()->getSystemModule())
+        getSimulation()->getSystemModule()->unsubscribe(MyMac1609_4::sigCarPktSent, this);
 }
 
 void MyVeinsRSUApp::finish()

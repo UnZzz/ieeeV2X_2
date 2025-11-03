@@ -31,7 +31,7 @@ void MyBaseApp::finish()
 {
     DemoBaseApplLayer::finish();
     // statistics recording goes here
-    //recordScalar("totalGeneratedWSMs_fromAllCars", totalGeneratedWSMs_inAllCars);
+    recordScalar("totalGeneratedWSMs_fromAllCars", totalGeneratedWSMs_inAllCars);
 }
 
 void MyBaseApp::populateWSM(BaseFrame1609_4* wsm, LAddress::L2Type rcvId, int serial)
