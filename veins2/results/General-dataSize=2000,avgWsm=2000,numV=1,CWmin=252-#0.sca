@@ -1,0 +1,289 @@
+version 2
+run General-138-20251010-13:22:42-5750
+attr configname General
+attr datetime 20251010-13:22:42
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars "$dataSize=2000, $avgWsm=2000, $numV=1, $CWmin=252"
+attr iterationvarsf dataSize=2000,avgWsm=2000,numV=1,CWmin=252-
+attr measurement "$dataSize=2000, $avgWsm=2000, $numV=1, $CWmin=252"
+attr network RSU_carInsertion_Scenario
+attr processid 5750
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 138
+attr seedset 138
+itervar CWmin 252
+itervar avgWsm 2000
+itervar dataSize 2000
+itervar numV 1
+param **.appl.dataLengthBits 2000bit
+param *.car[*].appl.avg_wsmInterval 2000us
+param *.vehicleInserter.numVehicles 1
+param *.**.nic.*.cwMIN_value 252
+param *.vehicleInserter.vehicleRngIndex 0
+param *.vehicleInserter.useRouteDistributions true
+param *.playgroundSizeX 2500m
+param *.playgroundSizeY 2500m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.traciVehicleManager.updateInterval 0.1s
+param *.traciVehicleManager.host "\"localhost\""
+param *.traciVehicleManager.port 9999
+param *.traciVehicleManager.autoShutdown false
+param *.traciVehicleManager.launchConfig "xmldoc(\"circles.launchd.xml\")"
+param *.traciVehicleManager.moduleName "\"car\""
+param *.rsU[*].mobility.x 1056
+param *.rsU[*].mobility.y 1056
+param *.rsU[*].mobility.z 3
+param *.rsU[*].applType "\"MyVeinsRSUApp\""
+param *.rsU[*].appl.headerLength "80 bit"
+param *.rsU[*].appl.sendBeacons false
+param *.rsU[*].appl.dataOnSch false
+param *.rsU[*].appl.sendWSA false
+param *.rsU[*].appl.beaconInterval 1s
+param *.rsU[*].appl.wsaInterval 0.1s
+param *.rsU[*].appl.beaconUserPriority 7
+param *.rsU[*].appl.dataUserPriority 5
+param *.rsU[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 1169m
+param *.connectionManager.drawMaxIntfDist true
+param *.car[*].nicType "\"My_Nic80211p_forCar\""
+param *.rsU[*].nicType "\"My_Nic80211p\""
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.useAcks true
+param *.**.nic.mac1609_4.txPower 10mW
+param *.**.nic.mac1609_4.bitrate 12Mbps
+param *.**.nic.phy80211p.minPowerLevel -103dBm
+param *.**.nic.phy80211p.useNoiseFloor false
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.car[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.car[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.**.collectCollisionStatistics true
+param *.car[*].applType "\"MyVeinsCarApp\""
+param *.car[*].appl.headerLength "80 bit"
+param *.car[*].appl.sendBeacons false
+param *.car[*].appl.dataOnSch false
+param *.car[*].appl.beaconInterval 1s
+param *.car[*].appl.sendWSA false
+param *.car[*].appl.beaconUserPriority 7
+param *.car[*].appl.dataUserPriority 5
+param *.car[*].veinsmobility.x 2000
+param *.car[*].veinsmobility.y 2000
+param *.car[*].veinsmobility.z 0
+
+scalar RSU_carInsertion_Scenario.car[0].appl generatedWSMs 27571
+scalar RSU_carInsertion_Scenario.car[0].appl receivedWSMs 0
+scalar RSU_carInsertion_Scenario.car[0].appl generatedBSMs 0
+scalar RSU_carInsertion_Scenario.car[0].appl receivedBSMs 0
+scalar RSU_carInsertion_Scenario.car[0].appl generatedWSAs 0
+scalar RSU_carInsertion_Scenario.car[0].appl receivedWSAs 0
+scalar RSU_carInsertion_Scenario.car[0].nic.phy80211p busyTime 0
+scalar RSU_carInsertion_Scenario.car[0].nic.phy80211p ncollisions 0
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 ReceivedBroadcasts 0
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 SentPackets 27571
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 SentAcknowledgements 0
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 RetriesExceeded 0
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 SNIRLostPackets 0
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 RXTXLostPackets 0
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 TotalLostPackets 0
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 TooLittleTime 0
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 TimesIntoBackoff 27571
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 SlotsBackoff 1745211
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 NumInternalContention 0
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 totalBusyTime 5.982907
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 sentPackets:count 27571
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar RSU_carInsertion_Scenario.car[0].nic.mac1609_4 channelBusy:timeavg 0.1089782695811
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar RSU_carInsertion_Scenario.car[0].veinsmobility startTime 1.2
+scalar RSU_carInsertion_Scenario.car[0].veinsmobility totalTime 54.8
+scalar RSU_carInsertion_Scenario.car[0].veinsmobility stopTime 56.1
+scalar RSU_carInsertion_Scenario.car[0].veinsmobility minSpeed 4.4539407485358
+scalar RSU_carInsertion_Scenario.car[0].veinsmobility maxSpeed 14.729818332658
+scalar RSU_carInsertion_Scenario.car[0].veinsmobility totalDistance 1659.0429821073
+scalar RSU_carInsertion_Scenario.car[0].veinsmobility totalCO2Emission 131.9773707627
+scalar RSU_carInsertion_Scenario.car[1].appl generatedWSMs 25698
+scalar RSU_carInsertion_Scenario.car[1].appl receivedWSMs 0
+scalar RSU_carInsertion_Scenario.car[1].appl generatedBSMs 0
+scalar RSU_carInsertion_Scenario.car[1].appl receivedBSMs 0
+scalar RSU_carInsertion_Scenario.car[1].appl generatedWSAs 0
+scalar RSU_carInsertion_Scenario.car[1].appl receivedWSAs 0
+scalar RSU_carInsertion_Scenario.car[1].nic.phy80211p busyTime 0
+scalar RSU_carInsertion_Scenario.car[1].nic.phy80211p ncollisions 0
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 ReceivedBroadcasts 0
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 SentPackets 25696
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 SentAcknowledgements 0
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 RetriesExceeded 0
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 SNIRLostPackets 0
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 RXTXLostPackets 0
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 TotalLostPackets 0
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 DroppedPacketsInMac 0
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 TooLittleTime 0
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 TimesIntoBackoff 25696
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 SlotsBackoff 1616947
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 NumInternalContention 0
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 totalBusyTime 5.576032
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 sentPackets:count 25696
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar RSU_carInsertion_Scenario.car[1].nic.mac1609_4 channelBusy:timeavg 0.10827246601945
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar RSU_carInsertion_Scenario.car[1].veinsmobility startTime 56.3
+scalar RSU_carInsertion_Scenario.car[1].veinsmobility totalTime 51.4
+scalar RSU_carInsertion_Scenario.car[1].veinsmobility stopTime 107.8
+scalar RSU_carInsertion_Scenario.car[1].veinsmobility minSpeed 4.6174609483283
+scalar RSU_carInsertion_Scenario.car[1].veinsmobility maxSpeed 15.2706029934
+scalar RSU_carInsertion_Scenario.car[1].veinsmobility totalDistance 1664.9061469577
+scalar RSU_carInsertion_Scenario.car[1].veinsmobility totalCO2Emission 133.65474152326
+scalar RSU_carInsertion_Scenario.car[2].appl generatedWSMs 34058
+scalar RSU_carInsertion_Scenario.car[2].appl receivedWSMs 0
+scalar RSU_carInsertion_Scenario.car[2].appl generatedBSMs 0
+scalar RSU_carInsertion_Scenario.car[2].appl receivedBSMs 0
+scalar RSU_carInsertion_Scenario.car[2].appl generatedWSAs 0
+scalar RSU_carInsertion_Scenario.car[2].appl receivedWSAs 0
+scalar RSU_carInsertion_Scenario.car[2].nic.phy80211p busyTime 0
+scalar RSU_carInsertion_Scenario.car[2].nic.phy80211p ncollisions 0
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 ReceivedBroadcasts 0
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 SentPackets 34057
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 SentAcknowledgements 0
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 RetriesExceeded 0
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 SNIRLostPackets 0
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 RXTXLostPackets 0
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 TotalLostPackets 0
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 DroppedPacketsInMac 0
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 TooLittleTime 0
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 TimesIntoBackoff 34057
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 SlotsBackoff 2140623
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 NumInternalContention 0
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 totalBusyTime 7.390369
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 sentPackets:count 34057
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar RSU_carInsertion_Scenario.car[2].nic.mac1609_4 channelBusy:timeavg 0.10773132653066
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar RSU_carInsertion_Scenario.car[2].veinsmobility startTime 108
+scalar RSU_carInsertion_Scenario.car[2].veinsmobility totalTime 68.5
+scalar RSU_carInsertion_Scenario.car[2].veinsmobility stopTime 176.6
+scalar RSU_carInsertion_Scenario.car[2].veinsmobility minSpeed 3.4625019131413
+scalar RSU_carInsertion_Scenario.car[2].veinsmobility maxSpeed 11.450988469889
+scalar RSU_carInsertion_Scenario.car[2].veinsmobility totalDistance 1659.3284770892
+scalar RSU_carInsertion_Scenario.car[2].veinsmobility totalCO2Emission 133.69629394419
+scalar RSU_carInsertion_Scenario.traciVehicleManager roiArea 0
+scalar RSU_carInsertion_Scenario.rsU[0].appl generatedWSMs 0
+scalar RSU_carInsertion_Scenario.rsU[0].appl receivedWSMs 98717
+scalar RSU_carInsertion_Scenario.rsU[0].appl generatedBSMs 0
+scalar RSU_carInsertion_Scenario.rsU[0].appl receivedBSMs 0
+scalar RSU_carInsertion_Scenario.rsU[0].appl generatedWSAs 0
+scalar RSU_carInsertion_Scenario.rsU[0].appl receivedWSAs 0
+scalar RSU_carInsertion_Scenario.rsU[0].appl totalGeneratedWSMs_fromAllCars 98720
+scalar RSU_carInsertion_Scenario.rsU[0].appl totalReceivedWSMs_fromAllCars 98717
+scalar RSU_carInsertion_Scenario.rsU[0].appl average_delay 0.001032146563
+scalar RSU_carInsertion_Scenario.rsU[0].appl aPDR 0.99996961102107
+scalar RSU_carInsertion_Scenario.rsU[0].appl totalSentPackets_byAllCars 98717
+scalar RSU_carInsertion_Scenario.rsU[0].appl mPDR 1
+scalar RSU_carInsertion_Scenario.rsU[0].appl receivedPktSendTime:count 98717
+attr source MyVeinsRSUApp_app_sigReceivedPktSendTime
+scalar RSU_carInsertion_Scenario.rsU[0].appl receivedPktGenTime:count 98717
+attr source MyVeinsRSUApp_app_sigReceivedPktGenTime
+statistic RSU_carInsertion_Scenario.rsU[0].appl pktDelay:stats
+field count 98717
+field mean 0.0010321465632141
+field stddev 0.001196913313167
+field min 0.000220323761
+field max 0.012780510405
+field sum 101.8904122808
+field sqrsum 0.24658652648439
+attr source MyVeinsRSUApp_app_sigPktDelay
+scalar RSU_carInsertion_Scenario.rsU[0].nic.phy80211p busyTime 0.10661436000022
+scalar RSU_carInsertion_Scenario.rsU[0].nic.phy80211p ncollisions 0
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 ReceivedBroadcasts 98717
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 SentPackets 0
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 SentAcknowledgements 0
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 RetriesExceeded 0
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 SNIRLostPackets 0
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 RXTXLostPackets 0
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 TotalLostPackets 0
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 TooLittleTime 0
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 TimesIntoBackoff 0
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 SlotsBackoff 0
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 NumInternalContention 0
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 totalBusyTime 21.322872
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar RSU_carInsertion_Scenario.rsU[0].nic.mac1609_4 channelBusy:timeavg 0.10661436000022
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar RSU_carInsertion_Scenario.car[3].appl generatedWSMs 11393
+scalar RSU_carInsertion_Scenario.car[3].appl receivedWSMs 0
+scalar RSU_carInsertion_Scenario.car[3].appl generatedBSMs 0
+scalar RSU_carInsertion_Scenario.car[3].appl receivedBSMs 0
+scalar RSU_carInsertion_Scenario.car[3].appl generatedWSAs 0
+scalar RSU_carInsertion_Scenario.car[3].appl receivedWSAs 0
+scalar RSU_carInsertion_Scenario.car[3].nic.phy80211p busyTime 0
+scalar RSU_carInsertion_Scenario.car[3].nic.phy80211p ncollisions 0
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 ReceivedBroadcasts 0
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 SentPackets 11393
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 SentAcknowledgements 0
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 RetriesExceeded 0
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 SNIRLostPackets 0
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 RXTXLostPackets 0
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 TotalLostPackets 0
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 DroppedPacketsInMac 0
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 TooLittleTime 0
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 TimesIntoBackoff 11393
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 SlotsBackoff 718573
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 NumInternalContention 0
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 totalBusyTime 2.472281
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 sentPackets:count 11393
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar RSU_carInsertion_Scenario.car[3].nic.mac1609_4 channelBusy:timeavg 0.10656383620689
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar RSU_carInsertion_Scenario.car[3].veinsmobility startTime 176.8
+scalar RSU_carInsertion_Scenario.car[3].veinsmobility totalTime 23.2
+scalar RSU_carInsertion_Scenario.car[3].veinsmobility stopTime 200
+scalar RSU_carInsertion_Scenario.car[3].veinsmobility minSpeed 12.888531616002
+scalar RSU_carInsertion_Scenario.car[3].veinsmobility maxSpeed 12.888531616002
+scalar RSU_carInsertion_Scenario.car[3].veinsmobility totalDistance 658.38146882139
+scalar RSU_carInsertion_Scenario.car[3].veinsmobility totalCO2Emission 44.571982646323
+

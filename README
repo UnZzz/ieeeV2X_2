@@ -1,0 +1,18 @@
+To run this simulation, the following actions are requred:
+
+1) 	This simulation requires veins_launchd to be started and listening for 
+	connections on a TCP socket, e.g. using "~/src/veins/bin/veins_launchd -vv".
+
+	python3 veins_launchd -vv -c /home/hakim/sumo-1_18_0/bin/sumo
+	
+	
+
+2)  Open	/veins/src/veins/modules/mac/ieee80211p/Mac1609_4.h. Modify the declaration of the member function sendFrame by making it  virtual. Thus, the function declaration becomes: 
+
+	virtual void sendFrame(Mac80211Pkt* frame, omnetpp::simtime_t delay, Channel channelNr, MCS mcs, double txPower_mW); 
+	
+	
+3)	Open	/veins/src/veins/modules/messages/BaseFrame1609_4.msg. Add the following two data members: 
+
+    LAddress::L2Type senderAddress = -1;     //sender of frame (-1 for any) 
+    simtime_t sentTime = SIMTIME_ZERO;       //the time this frame is sent at MAC level 

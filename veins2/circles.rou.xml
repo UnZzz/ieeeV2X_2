@@ -1,0 +1,69 @@
+<routes>
+    <vType id="car0" type="passenger" length="5" accel="3.5" decel="2.5" sigma="0.0"/>
+    <vType id="car1" type="passenger" length="5" accel="3.0" decel="4.0" sigma="0.0"/>
+    <vType id="car2" type="passenger" length="6" accel="2.5" decel="2.2" sigma="0.0"/>
+    <vType id="car3" type="passenger" length="4" accel="3.8" decel="4.5" sigma="0.0"/>
+    <vType id="car4" type="passenger" length="3" accel="4.0" decel="5.2" sigma="0.0"/>
+    <vType id="car5" type="passenger" length="6" accel="2.0" decel="2.2" sigma="0.0"/>
+   
+    
+    <route id="route0" color="1,1,0" edges="edge1 edge2"/>
+    <route id="route1" color="1,1,0" edges="edge3 edge4"/>
+    <route id="route2" color="1,1,0" edges="edge5 edge6"/>
+    <route id="route3" color="1,1,0" edges="edge2 edge3"/>
+    <route id="route4" color="1,1,0" edges="edge7 edge8"/>
+    <route id="route5" color="1,1,0" edges="edge6 edge7"/>
+    <route id="route6" color="1,1,0" edges="edge8 edge1"/>
+    <route id="route7" color="1,1,0" edges="edge4 edge5"/>
+   <!--  
+    <route id="route0" color="1,1,0" edges="edge1 edge8"/>
+    <route id="route1" color="1,1,0" edges="edge3 edge8"/>
+    <route id="route2" color="1,1,0" edges="edge5 edge8"/>
+    <route id="route3" color="1,1,0" edges="edge2 edge8"/>
+    <route id="route4" color="1,1,0" edges="edge7 edge8"/>
+    <route id="route5" color="1,1,0" edges="edge6 edge8"/>
+    <route id="route6" color="1,1,0" edges="edge8 edge1"/>
+    <route id="route7" color="1,1,0" edges="edge4 edge8"/>
+
+    <vehicle id="0" type="car0" route="route0" depart="0.0" color="1,0,0"/>
+  
+    
+    <flow id="carflow" type="car" beg="0" end="0" number="1" from="edge1" to="edge8"/>
+    <flow id="carflowA" type="car" beg="0" end="0" number="1" from="edge2" to="edge5"/> 
+    <flow id="carflowB" type="car" beg="0" end="0" number="1" from="edge3" to="edge2"/> 
+    <flow id="carflowC" type="car" beg="0" end="0" number="1" from="edge4" to="edge7"/> 
+    <flow id="carflowD" type="car" beg="0" end="0" number="1" from="edge5" to="edge1"/>
+    <flow id="carflowE" type="car" beg="0" end="0" number="1" from="edge6" to="edge2"/> 
+    <flow id="carflowF" type="car" beg="0" end="0" number="1" from="edge7" to="edge6"/>
+    <flow id="carflowH" type="car" beg="0" end="0" number="1" from="edge8" to="edge4"/> 
+    
+    <flow id="carflow8" type="car" beg="0" end="0" number="1" from="edge1" to="edge8"/>
+    <flow id="carflow10" type="car" beg="0" end="0" number="1" from="edge2" to="edge8"/> 
+    <flow id="carflow20" type="car" beg="0" end="0" number="1" from="edge3" to="edge8"/> 
+    <flow id="carflow30" type="car" beg="0" end="0" number="1" from="edge4" to="edge8"/> 
+    <flow id="carflow40" type="car" beg="0" end="0" number="1" from="edge5" to="edge8"/>
+    <flow id="carflow50" type="car" beg="0" end="0" number="1" from="edge6" to="edge8"/> 
+    <flow id="carflow60" type="car" beg="0" end="0" number="1" from="edge7" to="edge8"/>
+    <flow id="carflow70" type="car" beg="0" end="0" number="1" from="edge8" to="edge1"/> 
+    
+    <flow id="carflow01" type="car" beg="0" end="0" number="1" from="edge1" to="edge8"/>
+    <flow id="carflow11" type="car" beg="0" end="0" number="1" from="edge2" to="edge8"/> 
+    <flow id="carflow21" type="car" beg="0" end="0" number="1" from="edge3" to="edge8"/> 
+    <flow id="carflow31" type="car" beg="0" end="0" number="1" from="edge4" to="edge8"/> 
+    <flow id="carflow41" type="car" beg="0" end="0" number="1" from="edge5" to="edge8"/>
+    <flow id="carflow51" type="car" beg="0" end="0" number="1" from="edge6" to="edge8"/> 
+    <flow id="carflow61" type="car" beg="0" end="0" number="1" from="edge7" to="edge8"/>
+    <flow id="carflow71" type="car" beg="0" end="0" number="1" from="edge8" to="edge1"/> 
+    
+    <flow id="carflow82" type="car" beg="0" end="0" number="1" from="edge1" to="edge8"/>
+    <flow id="carflow12" type="car" beg="0" end="0" number="1" from="edge2" to="edge8"/> 
+    <flow id="carflow22" type="car" beg="0" end="0" number="1" from="edge3" to="edge8"/> 
+    <flow id="carflow32" type="car" beg="0" end="0" number="1" from="edge4" to="edge8"/> 
+    <flow id="carflow42" type="car" beg="0" end="0" number="1" from="edge5" to="edge8"/>
+    <flow id="carflow52" type="car" beg="0" end="0" number="1" from="edge6" to="edge8"/> 
+    <flow id="carflow62" type="car" beg="0" end="0" number="1" from="edge7" to="edge8"/>
+    <flow id="carflow72" type="car" beg="0" end="0" number="1" from="edge8" to="edge1"/>  -->
+    
+       <!--     -->
+</routes>
+

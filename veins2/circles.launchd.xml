@@ -1,0 +1,7 @@
+<launch>
+    <copy file="circles.net.xml" />
+    <copy file="circles.rou.xml" />
+    <copy file="circles.sumocfg" type="config" />
+</launch>
+
+ <!--   <copy file="circles.add.xml"/>    -->
