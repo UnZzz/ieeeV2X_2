@@ -1,0 +1,13 @@
+# Ignore all simulation result files
+*.sca
+*.vec
+*.vci
+
+# Ignore OMNeT++ scalar and vector files
+*.scavetmp
+
+# Keep this .gitignore file
+!.gitignore
+
+# Optional: if you want to keep a README in this directory
+!README.md
